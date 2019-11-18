@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.shpun.dao.ScoreDao">
+<mapper namespace="com.hyl.dao.ScoreDao">
 
     <insert id="insertScore" parameterType="score">
         insert into scores (studentId,courseId,stuCouScore) value (#{student.studentId},#{course.courseId},#{stuCouScore})
@@ -20,10 +20,10 @@
     <resultMap id="scoreMap" type="score">
         <result property="stuCouScore" column="stuCouScore"></result>
 
-        <association property="student" column="studentId" select="com.shpun.dao.StudentDao.selectStudentById">
+        <association property="student" column="studentId" select="com.hyl.dao.StudentDao.selectStudentById">
         </association>
 
-        <association property="course" column="courseId" select="com.shpun.dao.CourseDao.selectCourseById">
+        <association property="course" column="courseId" select="com.hyl.dao.CourseDao.selectCourseById">
         </association>
     </resultMap>
 
@@ -31,12 +31,12 @@
     <resultMap id="scoreMapSearch" type="score">
         <result property="stuCouScore" column="stuCouScore"></result>
 
-        <association property="student" javaType="com.shpun.pojo.Student">
+        <association property="student" javaType="com.hyl.pojo.Student">
             <id property="studentId" column="studentId"></id>
             <result property="studentName" column="studentName"></result>
         </association>
 
-        <association property="course" javaType="com.shpun.pojo.Course">
+        <association property="course" javaType="com.hyl.pojo.Course">
             <id property="courseId" column="courseId"></id>
             <result property="courseName" column="courseName"></result>
         </association>

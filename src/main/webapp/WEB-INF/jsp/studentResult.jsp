@@ -1,7 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: shpun
-  Date: 2018/8/28
+  User: hyl
   Time: 18:55
   To change this template use File | Settings | File Templates.
 --%>
@@ -22,6 +21,7 @@
     <style>
         body{
             padding-right: 0!important;
+            background-color:#d0e4fe;
         }
     </style>
 

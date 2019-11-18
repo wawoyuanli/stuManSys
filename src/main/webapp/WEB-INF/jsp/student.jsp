@@ -1,7 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: shpun
-  Date: 2018/8/28
+  User:hyl
   Time: 18:55
   To change this template use File | Settings | File Templates.
 --%>
@@ -22,6 +21,7 @@
     <style>
         body{
             padding-right: 0!important;
+            background-color:#d0e4fe;
         }
     </style>
 
@@ -113,6 +113,7 @@
                                         <label>奖惩信息</label>
                                         <textarea form="addStudentForm" name="studentRewOrPun" class="form-control" ></textarea>
                                     </div>
+                                </form>
                             </div>
 
                             <!-- 模态框底部 -->
@@ -172,16 +173,22 @@
                                         <label>奖惩信息</label>
                                         <textarea id="editStudentRewOrPun1" form="editStudentForm" name="studentRewOrPun" class="form-control" ></textarea>
                                     </div>
+
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-success">修改</button>
+                                  </form>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                              </div>
                             </div>
 
                             <!-- 模态框底部 -->
 
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-success">修改</button>
-                                </form>
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+<%--                            <div class="modal-footer">--%>
+<%--                                <button type="submit" class="btn btn-success">修改</button>--%>
+<%--                                </form>--%>
+<%--                                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>--%>
 
-                            </div>
+<%--                            </div>--%>
 
                         </div>
                     </div>

@@ -1,7 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: shpun
-  Date: 2018/8/28
+  User: hyl
   Time: 18:55
   To change this template use File | Settings | File Templates.
 --%>
@@ -50,6 +49,7 @@
                 <li class="nav-item"><a href="${path}/manager/score" class="nav-link text-center">成绩管理</a></li>
             </ul>
         </div>
+
 
         <div class="col-md-10">
             <div class="tab-content">

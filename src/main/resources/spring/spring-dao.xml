@@ -10,7 +10,7 @@
     <!-- 存放 spring整合mybatis过程 -->
 
     <!-- 1.导入数据库相关参数properties的属性 -->
-    <context:property-placeholder location="classpath:jdbcMysql.properties"/>
+    <context:property-placeholder location="classpath:jdbc.properties"/>
 
     <!-- 2.设置数据库信息，c3p0数据库连接池 -->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
@@ -40,7 +40,7 @@
 
         <!-- 设置一下两个属性，则不用在mabatis-config.xml中再设置别名和mapper的为止 -->
         <!-- 扫描pojo包 使用别名-->
-        <property name="typeAliasesPackage" value="com.shpun.pojo"/>
+        <property name="typeAliasesPackage" value="com.hyl.pojo"/>
         <!-- 扫描sql配置文件:mapper需要的xml文件-->
         <property name="mapperLocations" value="classpath:mapper/*.xml"/>
 
@@ -63,7 +63,7 @@
     <!-- 4.自动扫描配置Mapper的类 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- 指定Spring扫描的包 -->
-        <property name="basePackage" value="com.shpun.dao"/>
+        <property name="basePackage" value="com.hyl.dao"/>
         <!-- 指定Spring中SqlSessionFactory的Bean的名称 -->
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
         <!-- 指定类被注解标识才扫描 @Repository -->

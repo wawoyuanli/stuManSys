@@ -1,7 +1,7 @@
-package com.shpun.service;
+package com.hyl.service;
 
-import com.shpun.pojo.Student;
-import com.shpun.pojo.Teacher;
+import com.hyl.pojo.Student;
+import com.hyl.pojo.Teacher;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.context.ApplicationContext;

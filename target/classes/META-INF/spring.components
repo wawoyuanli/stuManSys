@@ -1,15 +1,17 @@
 #
-#Tue Sep 04 19:16:14 CST 2018
-com.shpun.controller.StudentController=org.springframework.stereotype.Component
-com.shpun.service.impl.ScoreServiceImpl=org.springframework.stereotype.Component
-com.shpun.dao.ScoreDao=org.springframework.stereotype.Component
-com.shpun.controller.CourseController=org.springframework.stereotype.Component
-com.shpun.service.impl.TeacherServiceImpl=org.springframework.stereotype.Component
-com.shpun.dao.CourseDao=org.springframework.stereotype.Component
-com.shpun.service.impl.StudentServiceImpl=org.springframework.stereotype.Component
-com.shpun.dao.StudentDao=org.springframework.stereotype.Component
-com.shpun.controller.ScoreController=org.springframework.stereotype.Component
-com.shpun.service.impl.CourseServiceImpl=org.springframework.stereotype.Component
-com.shpun.controller.ManagerController=org.springframework.stereotype.Component
-com.shpun.dao.TeacherDao=org.springframework.stereotype.Component
-com.shpun.controller.LoginController=org.springframework.stereotype.Component
+#Mon Nov 18 12:10:53 CST 2019
+com.hyl.service.impl.TeacherServiceImpl=org.springframework.stereotype.Component
+com.hyl.controller.StudentController=org.springframework.stereotype.Component
+com.hyl.dao.CourseDao=org.springframework.stereotype.Component
+com.hyl.dao.StudentDao=org.springframework.stereotype.Component
+com.hyl.controller.ScoreController=org.springframework.stereotype.Component
+com.hyl.service.impl.CourseServiceImpl=org.springframework.stereotype.Component
+com.hyl.controller.CourseController=org.springframework.stereotype.Component
+com.hyl.dao.TeacherDao=org.springframework.stereotype.Component
+com.hyl.service.impl.StudentServiceImpl=org.springframework.stereotype.Component
+com.hyl.dao.LoginDao=org.springframework.stereotype.Component
+com.hyl.controller.LoginController=org.springframework.stereotype.Component
+com.hyl.service.impl.ScoreServiceImpl=org.springframework.stereotype.Component
+com.hyl.controller.ManagerController=org.springframework.stereotype.Component
+com.hyl.service.impl.LoginServiceImpl=org.springframework.stereotype.Component
+com.hyl.dao.ScoreDao=org.springframework.stereotype.Component

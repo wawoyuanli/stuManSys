@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.shpun.dao.StudentDao">
+<mapper namespace="com.hyl.dao.StudentDao">
 
     <insert id="insertStudent" useGeneratedKeys="true" keyProperty="studentId" parameterType="student">
         insert into students (studentName,studentGender,studentClass,studentMajor,studentDepartment,studentRewOrPun) value (#{studentName},#{studentGender},#{studentClass},#{studentMajor},#{studentDepartment},#{studentRewOrPun})

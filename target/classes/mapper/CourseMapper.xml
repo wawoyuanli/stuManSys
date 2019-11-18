@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.shpun.dao.CourseDao">
+<mapper namespace="com.hyl.dao.CourseDao">
 
     <insert id="insertCourse" useGeneratedKeys="true" keyProperty="courseId" parameterType="course">
         insert into courses (courseName,teacherId,courseCredit) value (#{courseName},#{teacher.teacherId},#{courseCredit})
@@ -22,7 +22,7 @@
         <result property="courseName" column="courseName"></result>
         <result property="courseCredit" column="courseCredit"></result>
 
-        <association property="teacher" column="teacherId" select="com.shpun.dao.TeacherDao.selectTeacherById">
+        <association property="teacher" column="teacherId" select="com.hyl.dao.TeacherDao.selectTeacherById">
         </association>
 
     </resultMap>
@@ -33,7 +33,7 @@
         <result property="courseName" column="courseName"></result>
         <result property="courseCredit" column="courseCredit"></result>
 
-        <association property="teacher" javaType="com.shpun.pojo.Teacher">
+        <association property="teacher" javaType="com.hyl.pojo.Teacher">
             <id property="teacherId" column="CteacherId"></id>
             <result property="teacherName" column="TteacherName"></result>
         </association>

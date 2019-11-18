@@ -22,6 +22,7 @@
     <style>
         body{
             padding-right: 0!important;
+            background-color:#d0e4fe;
         }
     </style>
 

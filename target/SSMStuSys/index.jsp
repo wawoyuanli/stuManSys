@@ -11,13 +11,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" typ="text/css" href="../css/style.css">
     <title>学籍管理系统</title>
+<style>
+    body
+    {
+        background-color:#d0e4fe;
+        background-image: url("../背景.jpg");
+    }
+</style>
+
 </head>
 <body>
-
-
-
-
 <div class="container " style="margin-top:100px">
     <h2 class="text-center">学籍管理系统</h2>
 
@@ -39,20 +44,12 @@
             <button id="loginButton" class="btn btn-primary btn-lg btn-block" >登录</button>
 
         </form>
-
-
     </div>
-
-
 </div>
-
-<a href="${basePath}${path}/manager/student" class="btn btn-primary btn-lg btn-block" >登录</a>
-
 
 <!-- JavaScript -->
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-
 
 <script>
 
