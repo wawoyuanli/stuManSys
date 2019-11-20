@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SSMStuSys" />
-        <module name="ssmStudent" />
+        <module name="stuManSys" />
       </profile>
     </annotationProcessing>
   </component>
