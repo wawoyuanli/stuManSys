@@ -200,6 +200,7 @@
 
                 <!-- 学生表 -->
                 <table class="table table-striped table-bordered table-hover text-center" style="margin-top:15px" >
+
                     <thead>
                     <tr >
                         <th>学号</th>
@@ -213,6 +214,7 @@
                         <th>操作</th>
                     </tr>
                     </thead>
+
                     <tbody>
                     <c:forEach var="student" items="${studentPageInfo.list}">
                         <tr>
@@ -229,8 +231,8 @@
                             </td>
                         </tr>
                     </c:forEach>
-
                     </tbody>
+
                 </table>
 
                 <!-- 学生表 分页-->

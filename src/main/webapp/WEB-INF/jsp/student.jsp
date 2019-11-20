@@ -181,7 +181,6 @@
                                         <label>年龄</label>
                                         <input id="stuAge" type="text" name="stuAge" class="form-control" value="">
                                     </div>
-                              </div>
                             </div>
                             <!-- 模态框底部 -->
                            <div class="modal-footer">

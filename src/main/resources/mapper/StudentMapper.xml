@@ -18,7 +18,7 @@
 
     <select id="searchFromStudent" parameterType="string" resultType="student">
         select studentId,studentName,studentGender,studentClass,studentMajor,studentDepartment,studentRewOrPun  from students where
-            concat(studentId,ifnull(studentName,''),ifnull(studentGender,''),ifnull(studentClass,''),ifnull(studentMajor,''),ifnull(studentDepartment,''),ifnull(studentRewOrPun,'')) like concat(concat('%',#{s}),'%')
+            concat(studentId,ifnull(studentName,''),ifnull(studentGender,''),ifnull(studentClass,''),ifnull(studentMajor,''),ifnull(studentDepartment,''),ifnull(studentRewOrPun,''),ifnull(stuAge,'')) like concat(concat('%',#{s}),'%')
     </select>
 
     <select id="selectStudentById" parameterType="int" resultType="student">

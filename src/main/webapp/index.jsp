@@ -28,6 +28,7 @@
     <div class="col-md-5 mx-auto">
 
         <form id="loginForm" onsubmit="return false" action="#" method="post">
+<%--        <form id="loginForm" action="${pageContext.request.contextPath}/login/login" method="get">--%>
 
             <div class="form-group">
                 <input id="username" type="text" name="username" class="form-control" placeholder="用户名">
@@ -45,7 +46,6 @@
         </form>
          <br/>
         <span style="margin-left:200px">还没有账户？请前往<a href="regist.jsp">注册</a></span>
-
     </div>
 </div>
 

@@ -47,7 +47,6 @@
     </div>
 </div>
 
-
 <!-- JavaScript -->
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
