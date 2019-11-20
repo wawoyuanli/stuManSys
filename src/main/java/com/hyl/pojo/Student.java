@@ -9,6 +9,7 @@ public class Student {
     private String studentMajor;
     private String studentDepartment;
     private String studentRewOrPun;
+    private Integer stuAge;
 
     public int getStudentId() {
         return studentId;
@@ -66,8 +67,16 @@ public class Student {
         this.studentRewOrPun = studentRewOrPun;
     }
 
-    @Override
-    public String toString() {
-        return "student : id:"+this.getStudentId()+" name:"+this.getStudentName()+" gender:"+this.getStudentGender()+" class:"+this.getStudentClass()+" major:"+this.getStudentMajor()+" department:"+this.getStudentDepartment()+" rewOrPun:"+this.getStudentRewOrPun();
-    }
+	public Integer getStuAge (){
+		return stuAge;
+	}
+
+	public void setStuAge (Integer stuAge){
+		this.stuAge = stuAge;
+	}
+
+	@Override
+	public String toString (){
+		return "Student{" + "studentId=" + studentId + ", studentName='" + studentName + '\'' + ", studentGender='" + studentGender + '\'' + ", studentClass='" + studentClass + '\'' + ", studentMajor='" + studentMajor + '\'' + ", studentDepartment='" + studentDepartment + '\'' + ", studentRewOrPun='" + studentRewOrPun + '\'' + ", stuAge=" + stuAge + '}';
+	}
 }

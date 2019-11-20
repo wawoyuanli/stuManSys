@@ -10,7 +10,7 @@
 
     <!-- 配置SpringMVC 即以前的 dispatch-servlet.xml -->
 
-    <!-- 使用注解驱动 -->
+    <!-- 使用注解驱动:开启springMVC注解模式 -->
     <mvc:annotation-driven />
 
     <!-- 静态资源映射，用于css，js，png等 -->
@@ -19,10 +19,12 @@
 
 
     <!-- 扫描包下注解 -->
+    <!--扫描web相关的bean-->
     <context:component-scan base-package="com.hyl.controller" />
 
     <!-- 定义视图解析器 -->
     <!-- 找到/WEB-INF/jsp文件夹下，且文件后缀为.jsp的文件座位映射 -->
+    <!--配置jsp显示ViewResolver-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
         <property name="prefix" value="/WEB-INF/jsp/" />

@@ -13,16 +13,15 @@
     <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" typ="text/css" href="../css/style.css">
     <title>学籍管理系统</title>
-<style>
-    body
-    {
+ <style type="text/css">
+    #body{
+        /*background-image: url(http://n.sinaimg.cn/sinacn10/765/w1200h1165/20180406/2728-fysuuyc1109965.jpg);*/
         background-color:#d0e4fe;
-        background-image: url("../背景.jpg");
     }
-</style>
+ </style>
 
 </head>
-<body>
+<body id="body">
 <div class="container " style="margin-top:100px">
     <h2 class="text-center">学籍管理系统</h2>
 
@@ -44,6 +43,9 @@
             <button id="loginButton" class="btn btn-primary btn-lg btn-block" >登录</button>
 
         </form>
+         <br/>
+        <span style="margin-left:200px">还没有账户？请前往<a href="regist.jsp">注册</a></span>
+
     </div>
 </div>
 

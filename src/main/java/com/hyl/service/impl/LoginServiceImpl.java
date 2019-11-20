@@ -19,4 +19,11 @@ public class LoginServiceImpl implements LoginService{
 	public User selectUser(String username,String password){
 		return loginDao.selectUser(username,password);
 	}
+
+	@Override
+	@Transactional(propagation = Propagation.REQUIRES_NEW, isolation = Isolation.READ_COMMITTED)
+	public int insertUser (User user){
+		int i = loginDao.insertUser(user);
+		return i ;
+	}
 }

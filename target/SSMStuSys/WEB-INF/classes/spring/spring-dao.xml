@@ -69,5 +69,9 @@
         <!-- 指定类被注解标识才扫描 @Repository -->
         <property name="annotationClass" value="org.springframework.stereotype.Repository"/>
     </bean>
-
+    <!--事务管理-->
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
 </beans>

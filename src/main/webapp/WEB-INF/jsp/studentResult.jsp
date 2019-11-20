@@ -113,6 +113,10 @@
                                         <label>奖惩信息</label>
                                         <textarea form="addStudentForm" name="studentRewOrPun" class="form-control" ></textarea>
                                     </div>
+                                    <div class="form-group">
+                                        <label>年龄</label>
+                                        <input type="text" name="stuAge" class="form-control">
+                                    </div>
                             </div>
 
                             <!-- 模态框底部 -->
@@ -172,6 +176,10 @@
                                         <label>奖惩信息</label>
                                         <textarea id="editStudentRewOrPun1" form="editStudentForm" name="studentRewOrPun" class="form-control" ></textarea>
                                     </div>
+                                    <div class="form-group">
+                                        <label>年龄</label>
+                                        <input id="stuAge" type="text" name="stuAge" class="form-control" value="">
+                                    </div>
                             </div>
 
                             <!-- 模态框底部 -->
@@ -201,6 +209,7 @@
                         <th>专业</th>
                         <th>院系</th>
                         <th>奖惩信息</th>
+                        <th>年龄</th>
                         <th>操作</th>
                     </tr>
                     </thead>
@@ -214,6 +223,7 @@
                             <td>${student.studentMajor}</td>
                             <td>${student.studentDepartment}</td>
                             <td>${student.studentRewOrPun}</td>
+                            <td>${student.stuAge}</td>
                             <td><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#editStudentModal" onclick="showStudentInModal(this)" >修改</button>
                                 <a href="${path}/student/delete?studentId=${student.studentId}" class="btn btn-danger btn-sm" role="button">删除</a>
                             </td>

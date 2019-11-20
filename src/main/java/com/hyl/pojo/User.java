@@ -1,21 +1,16 @@
 package com.hyl.pojo;
 
+
+
 public class User {
-    private Integer id;
+
+    private int id;
     private String username;
     private String password;
 
     public String getUsername() {
         return username;
     }
-
-	public Integer getId (){
-		return id;
-	}
-
-	public void setId (Integer id){
-		this.id = id;
-	}
 
 	public void setUsername(String username) {
         this.username = username;
@@ -28,4 +23,16 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+	public int getId (){
+		return id;
+	}
+	public void setId (int id){
+		this.id = id;
+	}
+
+	@Override
+	public String toString (){
+		return "User{" + "id=" + id + ", username='" + username + '\'' + ", password='" + password + '\'' + '}';
+	}
 }
